@@ -2,10 +2,10 @@ import { useRef } from "react";
 
 function InputField({
   placeholder,
-  classes,
+  classess = "",
 }: {
   placeholder: string;
-  classes: string;
+  classess: string | undefined;
 }) {
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -13,7 +13,7 @@ function InputField({
     <>
       <input
         placeholder={placeholder}
-        className={`${classes}`}
+        className={`w-full px-[16px] py-[8px] capitalize border-2 border-borderColor outline-none ${classess}`}
         ref={inputRef}
       />
     </>

@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import "./../index.css";
 import SpecialText from "../components/SpecialText";
 
 export default {
   component: SpecialText,
   title: "SpecialText",
+  tags: ["autodocs"],
 } satisfies Meta<typeof SpecialText>;
 
 type Story = StoryObj<typeof SpecialText>;

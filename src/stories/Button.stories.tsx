@@ -1,14 +1,16 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import "./../index.css";
+
 import Button from "../components/Button";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { within } from "@storybook/testing-library";
 library.add(fas);
 export default {
   component: Button,
   title: "SubmitBtn",
+  tags: ["autodocs"],
 } satisfies Meta<typeof Button>;
 
 type Story = StoryObj<typeof Button>;
@@ -19,6 +21,10 @@ export const SubmitBtn: Story = {
     classes: `capitalize w-full text-white bg-mainColor px-[24px] py-[16px]`,
     handleClick: () => console.log("clicked"),
   },
+  // play: async ({ canvasElement }) => {
+  //   const canvas = within(canvasElement);
+
+  // }
 };
 
 export const GetStarted: Story = {

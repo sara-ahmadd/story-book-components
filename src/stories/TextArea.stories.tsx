@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import "./../index.css";
 import TextArea from "../components/TextArea";
 
 export default {
   component: TextArea,
   title: "TextArea",
+  tags: ["autodocs"],
 } satisfies Meta<typeof TextArea>;
 
 type Story = StoryObj<typeof TextArea>;
